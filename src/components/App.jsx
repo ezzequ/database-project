@@ -3,6 +3,7 @@ import "../App.css";
 import Header from "./Header";
 import Login from "./Login";
 import OfflineFeed from "./OfflineFeed";
+import OnlineFeed from "./OnlineFeed";
 function App() {
   return (
     <div className="App">
@@ -12,6 +13,7 @@ function App() {
           <Route path="/login" element={<Login />}></Route>
         </Routes>
       </BrowserRouter>
+      <OnlineFeed />
       <OfflineFeed />
     </div>
   );
