@@ -3,6 +3,7 @@ import "./CreatePost.css";
 import { FaGlasses } from "react-icons/fa";
 import { MdMenuBook } from "react-icons/md";
 import { MdPostAdd } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 function CreatePost() {
   return (
@@ -10,15 +11,20 @@ function CreatePost() {
       <div className="heading">
         <div>
           <MdMenuBook size={30} color="#87204D" />
-          <p>Go to the feed</p>
+          <p>Go to feed</p>
         </div>
         <div>
           <MdPostAdd size={40} color="#87204D" />
           <h3>Create new post</h3>
         </div>
         <div>
-          <FaGlasses size={30} color="#87204D" />
-          <p>My posts</p>
+          <Link
+            to={"/myposts"}
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <FaGlasses size={30} color="#87204D" />
+            <p>My posts</p>
+          </Link>
         </div>
       </div>
 
