@@ -2,11 +2,15 @@
     font-weight: 300;
 }
 
+.LogInBox{
+ width:-webkit-fill-available;
+ background-color:#EDE8EA ;
 
+}
 
 .LogInCreateAccountBox{
-    width:-webkit-fill-available;
-    background-color:#EDE8EA ;
+    margin: auto;
+    max-width: 800px;
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -20,20 +24,25 @@
 .CreateAccountPlaceHolder{
 display: flex;
 flex-direction: column;
-align-content: flex-start;
+align-content: center;
 text-align: left;
-align-content: flex-start;
-justify-content: left;
-padding: 2rem;
+justify-content: flex-start;
+}
+.CreateAccountPlaceHolder p{
+max-width: 280px;
 }
 .CreateAccountPlaceHolder button{
-    width: 80%;
     background-color: #87204D;
     padding:10px;
     border-radius:2px;
     border:none;
     color:white
 }
+
+.CreateAccountPlaceHolder button:hover{
+    background-color:#9d305f ;
+}
+    
 
 .loginPlaceHolder{
 display: flex;
@@ -45,6 +54,7 @@ justify-content: left;
 }
 
 .loginPlaceHolder input{
+    width: 100%;
    margin-top: 5px;
    align-self: left;
    border:none;
@@ -74,6 +84,13 @@ justify-content: left;
    border-radius: 2px;
    color:white
 }
+
+.logInButtonPlaceHolder button:hover{
+   
+   background-color: #A17C8C;
+  
+}
+
 
 
 

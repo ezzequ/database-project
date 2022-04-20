@@ -11,12 +11,17 @@ function Login() {
           share your own
         </p>
       </div>
-      <div className="LogInCreateAccountBox">
-      
+      <div className="LogInBox">
+        <div className="LogInCreateAccountBox">
           <div class="CreateAccountPlaceHolder">
             <h2>Create Account</h2>
-            <p></p>
-            <button>Create Account</button>
+            <p>
+              If you don’t have an account, create one by pressing the button
+              below:
+            </p>
+            <a href={"/createaccount"}>
+              <button>Create Account</button>
+            </a>
           </div>
 
           <div className="loginPlaceHolder">
@@ -32,12 +37,14 @@ function Login() {
               </div>
               <div className="logInButtonPlaceHolder">
                 <p>
-                  Forgot Login details?<p style={{color:"red"}}>click here</p>
+                  Forgot Login details?
+                  <p style={{ color: "red" }}>click here</p>
                 </p>
                 <button>Log in</button>
               </div>
             </form>
-            </div>
+          </div>
+        </div>
       </div>
     </>
   );
