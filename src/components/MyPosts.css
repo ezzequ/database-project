@@ -1,0 +1,15 @@
+.container {
+  height: 100vh;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem;  
+}
+
+.heading div{
+    width: 20%;
+}
