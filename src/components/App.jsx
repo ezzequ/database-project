@@ -4,6 +4,7 @@ import Header from "./Header";
 import Login from "./Login";
 import MyPosts from "./MyPosts";
 import CreatePost from "./CreatePost";
+import CreateAccount from "./CreateAccount";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/login" element={<Login />}></Route>
+          <Route path="/createAccount" element={<CreateAccount />}></Route>
           <Route path="/myposts" element={<MyPosts />}></Route>
           <Route path="/createpost" element={<CreatePost />}></Route>
         </Routes>
