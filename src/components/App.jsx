@@ -14,7 +14,7 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<OfflineFeed />}></Route>
+          <Route path="/" element={<OfflineFeed />} />
           <Route path="/login" element={<Login />}></Route>
           <Route path="/online" element={<OnlineFeed />}></Route>
           <Route path="/createAccount" element={<CreateAccount />}></Route>
