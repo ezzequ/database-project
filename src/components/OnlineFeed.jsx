@@ -1,4 +1,4 @@
-import { Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import React from "react";
 import { FaGlasses } from "react-icons/fa";
@@ -43,45 +43,60 @@ export default function OnlineFeed() {
             <Box
               sx={{
                 backgroundColor: "#ede8ea",
-                height: 300,
+                minHeight: "auto",
                 width: 300,
               }}
             >
               <Box
                 sx={{
-                  position: "absolute",
-
-                  // left: "270px",
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "end",
+                  gap: "1rem",
+                  margin: "1rem",
                 }}
               >
-                <FaTrashAlt
-                  size={15}
-                  color={"black"}
-                  style={{ padding: "1rem" }}
-                />
-
-                <FaPen size={15} color={"black"} style={{ padding: "1rem" }} />
+                <FaTrashAlt color={"#87204d"} />
+                <FaPen color={"#87204d"} />
               </Box>
               <Box
                 sx={{
                   display: "flex",
                   flexDirection: "column",
-                  textAlign: "start",
                   padding: "1rem",
-                  position: "relative",
+                  overflow: "hidden",
+                  overflowY: "scroll",
+                  textAlign: "left",
                 }}
               >
-                <Typography variant="h6">Title:</Typography>
-                <Typography variant="h6">Author:</Typography>
-                <Typography>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Non
-                  exercitationem veritatis aspernatur ad. Voluptate omnis sequi
-                  in sunt, fuga magni veritatis recusandae inventore iusto
-                  exercitationem beatae, voluptatem eius obcaecati dignissimos.
-                </Typography>
+                <p
+                  style={{
+                    fontSize: "larger",
+                    textAlign: "center",
+                    display: "flex",
+                    justifyContent: "center",
+                    flexDirection: "column",
+                    color: "#87204d",
+                  }}
+                >
+                  Harry Potter and the Goblet of Fire by J.K. Rowling
+                </p>
+
+                <p>
+                  Description <br></br>
+                  This is the fourth novel in the Harry Potter series. It
+                  follows Harry Potter, a wizard in his fourth year at Hogwarts
+                  School of Witchcraft and Wizardry, and the mystery surrounding
+                  the entry of Harry's name into the Triwizard Tournament, in
+                  which he is forced to compete.
+                </p>
+                <p>
+                  User's review
+                  <br></br>
+                  The book is imaginative, funny, frightening and, of course,
+                  magical! What makes them so successful is that they combine
+                  action, fantasy and friendship.
+                </p>
               </Box>
             </Box>
           </Grid>
