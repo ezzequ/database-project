@@ -16,14 +16,18 @@ export default function OnlineFeed() {
           justifyContent: "center",
         }}
       >
-        <div style={{ padding: "2rem" }}>
-          <FaGlasses size={30} color="#87204D" />
-          <p>My Posts</p>
-        </div>
-        <div style={{ padding: "2rem" }}>
-          <MdPostAdd size={30} color="#87204D" />
-          <p>Create New Post</p>
-        </div>
+        <a href="/myposts" style={{ color: "black", textDecoration: "none" }}>
+          <div style={{ padding: "2rem" }}>
+            <FaGlasses size={30} color="#87204D" />
+            <p>My Posts</p>
+          </div>
+        </a>
+        <a href="/createpost" style={{ color: "black", textDecoration: "none" }}>
+          <div style={{ padding: "2rem" }}>
+            <MdPostAdd size={30} color="#87204D" />
+            <p>Create New Post</p>
+          </div>
+        </a>
       </div>
       <div className="grid">
         <Grid container>

@@ -10,8 +10,13 @@ function CreatePost() {
     <div className="container">
       <div className="heading">
         <div>
-          <MdMenuBook size={30} color="#87204D" />
-          <p>Go to feed</p>
+          <Link
+            to={"/online"}
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            <MdMenuBook size={30} color="#87204D" />
+            <p>Go to feed</p>
+          </Link>
         </div>
         <div>
           <MdPostAdd size={40} color="#87204D" />
