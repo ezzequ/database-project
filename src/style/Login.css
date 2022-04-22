@@ -4,7 +4,7 @@
 
 .LogInBox{
  width:-webkit-fill-available;
- background-color:#EDE8EA ;
+ background-color:white ;
 
 }
 
@@ -20,7 +20,15 @@
    padding-left: 50px;
    padding-right: 50px;
 }
+#exploreOffline{
+    background-color: #87204D;
+    padding:8px;
+    border-radius:2px;
+    border:none;
+    color:white;
+    align-self: flex-end;
 
+}
 .CreateAccountPlaceHolder{
 display: flex;
 flex-direction: column;
@@ -54,7 +62,8 @@ justify-content: left;
 }
 
 .loginPlaceHolder input{
-    width: 100%;
+  background-color: #EDE8EA;
+   width: 100%;
    margin-top: 5px;
    align-self: left;
    border:none;

@@ -1,5 +1,6 @@
 import React from "react";
 import "../style/Login.css"
+import {FaLongArrowAltRight} from "react-icons/fa";
 
 function Login() {
   return (
@@ -13,7 +14,7 @@ function Login() {
       </div>
       <div className="LogInBox">
         <div className="LogInCreateAccountBox">
-          <div class="CreateAccountPlaceHolder">
+          <div className="CreateAccountPlaceHolder">
             <h2>Create Account</h2>
             <p>
               If you don’t have an account, create one by pressing the button
@@ -26,21 +27,40 @@ function Login() {
 
           <div className="loginPlaceHolder">
             <h2>Login or Continue Offline</h2>
+            <a href="/offline">
+              <button id="exploreOffline">
+                Explore Offline
+                <FaLongArrowAltRight
+                  size={19}
+                  style={{ marginBottom: "-5px" }}
+                />
+              </button>
+            </a>
             <form>
               <div className="InputHolder">
-                <label for="userName">Username</label>
+                <label>Username</label>
                 <input name="userName"></input>
               </div>
               <div className="InputHolder">
-                <label for="passWord">Password</label>
+                <label>Password</label>
                 <input name="passWord"></input>
               </div>
               <div className="logInButtonPlaceHolder">
                 <p>
-                  Forgot Login details?
-                  <p style={{ color: "red" }}>click here</p>
+                  Forgot Login details?<br></br>
+                  <a href="/login" style={{ color: "red" }}>
+                    click here
+                  </a>
                 </p>
-                <button>Log in</button>
+
+                <button>
+                  <a
+                    href="/online"
+                    style={{ color: "white", textDecoration: "none" }}
+                  >
+                    Log in{" "}
+                  </a>
+                </button>
               </div>
             </form>
           </div>
